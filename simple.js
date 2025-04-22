@@ -1017,7 +1017,7 @@ NanoBotz.setBio = async (status) => {
         m.mtype = (!['senderKeyDistributionMessage', 'messageContextInfo'].includes(mtype[0]) && mtype[0]) || // Sometimes message in the front
             (mtype.length >= 3 && mtype[1] !== 'messageContextInfo' && mtype[1]) || // Sometimes message in midle if mtype length is greater than or equal to 3!
             mtype[mtype.length - 1] // common case
-        m.msg = m.message[m.mtype]
+        m.msg = m.message[mtype]
         if (m.chat == 'status@broadcast' && ['protocolMessage', 'senderKeyDistributionMessage'].includes(m.mtype)) m.chat = (m.key.remoteJid !== 'status@broadcast' && m.key.remoteJid) || m.sender
         if (m.mtype == 'protocolMessage' && m.msg.key) {
             if (m.msg.key.remoteJid == 'status@broadcast') m.msg.key.remoteJid = m.chat
@@ -1359,3 +1359,20 @@ function getRandom() {
 function rand(isi) {
      return isi[Math.floor(Math.random() * isi.length)]
 }
+
+// Fungsi untuk parse pesan
+function parseMessage(message) {
+  // Cek jika ada pesan dan dimulai dengan prefix
+  if (message && typeof message === 'string') {
+    // Hanya proses pesan yang dimulai dengan titik
+    if (!message.startsWith('.')) {
+      return null; // Abaikan pesan tanpa prefix
+    }
+  }
+  
+  // Jika pesan dimulai dengan '.' atau bukan string, kembalikan pesan asli
+  return message;
+}
+
+// Export fungsi
+module.exports.parseMessage = parseMessage;

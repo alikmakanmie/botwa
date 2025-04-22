@@ -54,7 +54,7 @@ modul: {
     yts: require('yt-search'),
     yt: require('youtube-yts'),
     ytdl: require('ytdl-core'),
-    webp: require('node-webpmux')
-
+    webp: require('node-webpmux'),
+    prefixHandler: require('./prefix_handler')
 }
 }

@@ -2,19 +2,24 @@ const chalk = require("chalk")
 const fs = require("fs")
 //aumto presence update
 global.autoTyping = false //auto tying in gc (true to on, false to off)
-global.autoRecord = true //auto recording (true to on, false to off)
+global.autoRecord = false //auto recording (true to on, false to off)
 global.autoblockmorroco = true //auto block 212 (true to on, false to off)
 global.wlcm = true
 global.autokickmorroco = true //auto kick 212 (true to on, false to off) 
 global.antispam = false//auto kick spammer (true to on, false to off)
+global.auto_ai_grup = false //auto AI in group chat (true to on, false to off)
+global.auto_ai_pc = false //auto AI in private chat (true to on, false to off)
+global.autosimi = false //auto simi response (true to on, false to off)
+global.nanochat = false //auto nano chat (true to on, false to off)
+global.autoread = false //auto read messages (true to on, false to off)
 //===============SETTING MENU==================\\
 global.thumbnail = 'https://cdn.elxyzgpt.xyz/file/QGwjm6kOKS.png'
-global.ig = '@DinzID Chx'
-global.yt = 'Dinz Kece'
-global.ttowner = '@kmnz178'
-global.ownername = '🐺 DinzID Chx 🐺'
-global.owner = ['6283182739135'] // SETTING JUGA DI FOLDER DATABASE 
-global.ownernomer = '6283182739135'
+global.ig = '@Alikmakanmie'
+global.yt = '-'
+global.ttowner = '@Aliklupapassword'
+global.ownername = 'Alikmakanmie🍜'
+global.owner = ['6285175171350'] // SETTING JUGA DI FOLDER DATABASE 
+global.ownernomer = '6285175171350'
 global.socialm = 'GitHub: -'
 global.location = 'Indonesia' 
 //========================setting Payment=====================\\
@@ -26,10 +31,10 @@ global.andana = '' // KOSONG KAN JIKA TIDAK ADA
 global.angopay = '' // KOSONG KAN JIKA TIDAK ADA
 global.anovo = '' // KOSONG KAN JIKA TIDAK ADA
 //==================setting bot===========================\\
-global.botname = "Yoimiya-Ai"
-global.ownernumber = '6283182739135'
-global.botnumber = '6283856943872'
-global.ownername = 'DinzID Chx'
+global.botname = "Alikmakanmie🍜"
+global.ownernumber = '6285175171350'
+global.botnumber = '6285175171350'
+global.ownername = 'Alikmakanmie🍜'
 global.idSaluran = "120363283540203585@newsletter"
 global.idch = "120363283540203585@newsletter"
 global.namaSaluran = "DinzID Chx"
@@ -189,7 +194,7 @@ global.rpg = {
 }
 
 //new
-global.prefix = ['','!','.','#','&']
+global.prefix = ['.']
 global.sessionName = 'session'
 global.hituet = 0
 //media target
